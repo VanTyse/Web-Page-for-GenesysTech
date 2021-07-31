@@ -9,10 +9,11 @@ class App extends React.Component{
   }
   render(){
     return(
-      <body>
+      <body className = "body">
         <Header/>
         <Favs/>
         <Feed/>
+        <Profile/>
       </body>
       
     )
@@ -135,12 +136,57 @@ function Feed(){
   )
 }
 
-{/*function Profile(){
+function Profile(){
   return(
-    
+    <aside className="profile">
+    <div className="profile-details">
+        <div className="profile-img"></div>
+        <p className="username">esamyna</p>
+        <p className="career">Event Manager</p>
+        <p className="edit">Edit</p>
+        <div className="profile-description">
+            <p>I know how to organize events in IT and myself <br/> Read and Bowwow.</p>
+        </div>
+        <div className="details">
+            <div className="det-1">
+                <p className="e">97</p>
+                <p className="f">Posts</p>
+            </div>
+            <div className="det-2">
+                <p className="e">3,5k</p>
+                <p className="f">Followers</p>
+            </div>
+            <div className="det-3">
+                <p className="e">12</p>
+                <p className="f">Bowss</p>
+            </div>
+        </div>
+        <div className="options">
+            <p>Posts</p>
+            <p>Drafts</p>
+        </div>
+
+
+    </div>
+    <div className="post-items">
+        <div className="item1">
+            <p>Add new</p>
+            <p className="plus">+</p>
+        </div>
+        <div className="item2">
+            <p>Be patient with clients</p>
+        </div>
+        <div className="item3">
+            <p>12 Steps To Organizing Your Event</p>
+        </div>
+        <div className="item4">
+            <p>Zero Budget</p>
+        </div>
+    </div>
+</aside>
   )
 }
-*/}
+
 
 
 export default App;

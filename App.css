@@ -1,3 +1,43 @@
+
+*{
+  margin: 0;
+  box-sizing: content-box;
+}
+
+.material-icons{
+  padding: 0px;
+  position: absolute;
+  left: -10px;
+}
+
+.container{
+  margin-top: 12px;
+  position: relative;
+}
+.container1{
+  margin-top: 0;
+  position: relative;
+}
+.more{
+  position: absolute;
+  font-size: 16px;
+  font-weight: bold;
+  left: 15px;
+  
+}
+
+.body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: grid;
+  grid-template-columns: 1.2fr 2.8fr 2fr;
+  grid-template-rows: 75px auto;
+  grid-gap: 7px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+
 .header{
   grid-column: 1/3;
 }
@@ -187,6 +227,158 @@
       float: right;
     }
 
+/*PROFILE*/
+
+    
+.profile{
+  grid-column: 3/4;
+  grid-row: 1/-1;
+}
+  .profile-details{
+    height: auto;
+  }
+  .profile-details p{
+    font-size: 12px;
+  }
+  .post-items{
+    display: grid;
+    grid-template: repeat(2, 151px)/repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .plus{
+    margin-top: 70px;
+    float: right;
+    font-size: 24px;
+  }
+  .post-items div{
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: 500;
+  }
+
+  .post-items .item1{
+    background-color:  rgb(236, 233, 233);
+    border: none
+  }
+  .post-items .item4{
+    background-color: orangered;
+    border: none;
+  }
+
+  .profile-img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: orangered;
+    margin: 6px auto;;
+  }
+
+  .profile .profile-details .username{
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  .details .e{
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .profile .profile-details .details{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .profile-details .options{
+    display:flex;
+    width: 80%;
+    margin: 15px auto;
+    justify-content: space-between;
+  }
+  .profile .profile-details .profile-description{
+    background-color:  rgb(156, 223, 243);
+    padding: 15px;
+    font-size: 13px;
+    margin: 15px 20px;
+    border-radius: 10px;
+  }
+  .profile .profile-details .career{
+    text-align: center;
+    font-weight: 200;
+    opacity: 0.7;
+  }
+  .profile .profile-details .edit{
+    text-align: center;
+    font-weight: 100;
+    opacity: 0.5;
+  }
+  
+/*SIDE-BAR*/  
+
+
+.side-bar{
+  grid-column: 1/2;
+}
+
+  .side-bar ul{
+    font-size: 14px;
+    margin: 20px 0 10px 5px;;
+    padding: 0;
+  }
+
+  .side-bar ul li{
+    margin: 10px;
+    list-style-type: square;
+    padding-bottom: 5px;
+  }
+
+  .my-bowws{
+    margin-top: 130px;
+    margin-bottom: 0;
+  }
+  .my-bowws h4{
+    margin-bottom: 20px;
+  }
+
+  .container-bowws{
+    display: flex;
+  }
+
+  .block-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+  }
+  .side-bar .text-bowws h4{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .text-bowws p{
+      font-size: 11px;
+      color: grey;
+  }
+  .side-bar .favs{
+    margin-bottom: 50px; 
+  }
+
+  .orange{
+    background-color: orangered;
+  }
+  .blue{
+    background: rgb(0, 0, 46);
+  }
+
+    
+
+  
 
     
 
